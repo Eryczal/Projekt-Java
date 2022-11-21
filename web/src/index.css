@@ -1,0 +1,24 @@
+:root {
+  --color-background: #fafafa;
+  --color-primary-text: #333;
+
+  --font-size-default: 16px;
+  
+  --font-default: "Open Sans", sans-serif;
+  --font-header: "Raleway", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-primary-text);
+  font-family: var(--font-default);
+}
+
+.login-container {
+  
+}
+
+.login-form {
+
+}
