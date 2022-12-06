@@ -1,24 +1,89 @@
 :root {
-  --color-background: #fafafa;
-  --color-primary-text: #333;
+    --color-background: #fafafa;
+    --color-primary-text: #333;
+    --color-header-background: #292929;
 
-  --font-size-default: 16px;
-  
-  --font-default: "Open Sans", sans-serif;
-  --font-header: "Raleway", sans-serif;
+    --font-size-default: 16px;
+
+    --font-default: "Open Sans", sans-serif;
+    --font-header: "Raleway", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-header);
 }
 
 body {
-  margin: 0;
-  background-color: var(--color-background);
-  color: var(--color-primary-text);
-  font-family: var(--font-default);
+    margin: 0;
+    background-color: var(--color-background);
+    color: var(--color-primary-text);
+    font-family: var(--font-default);
 }
+
+/* Header */
+.header {
+    background-color: var(--color-header-background);
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    height: 80px;
+    color: var(--color-background);
+}
+
+.site-name {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.site-name h1 {
+    margin: 0;
+}
+
+.site-nav {
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav li {
+    display: inline-block;
+}
+
+.site-nav a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Login Page */
 
 .login-container {
-  
+    width: 100%;
+    height: 100vh;
+    position: relative;
 }
 
-.login-form {
+.login__form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: 1px solid #eee;
+    width: 60vh;
+    height: 60vh;
+}
 
+.register-link, .login-link {
+    font-size: 14px;
 }
